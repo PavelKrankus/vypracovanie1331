@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13.3.1</title>
+    <script src="./main.js"></script>
+    <style>
+      p {
+        display: none;
+      }
+
+      div:hover p {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Nadpis</h1>
+      <p>script</p>
+    </div>
+
+    <div>
+      <form>
+        <label>Názov filmu:</label>
+        <input type="text" id="nazov" /> <br />
+
+        <label>Rok vydania:</label>
+        <input type="text" id="rok" /> <br />
+
+        <label>Hlavná postava:</label>
+        <input type="text" id="herec" />
+        <br />
+
+        <button type="button" id="movie" onclick="fAdd()">Vložiť</button>
+
+        <button type="button" onclick="fDel()">Odstrániť posledný</button>
+
+        <button type="button" onclick="fDelAll()">Vymazať celý zoznam</button>
+      </form>
+    </div>
+
+    <p id="demo"></p>
+  </body>
+</html>
